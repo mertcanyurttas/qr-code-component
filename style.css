@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+/* font-family: 'Outfit', sans-serif; */
+
+:root {
+    --background-color: hsl(212, 45%, 89%);
+    --container-bg-color: hsl(0, 0%, 100%);
+    --paragraph-color: hsl(220, 15%, 55%);
+    --header-color: hsl(218, 44%, 22%);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color);
+}   
+
+.main .container {
+    width: 320px;
+    height: 497px;
+    background-color: var(--container-bg-color);
+    border-radius: 20px;
+    padding: 16px 16px 40px 16px;
+    box-shadow: 0px 16px 16px 0px hsla(0, 0%, 0%, 0.050);
+}
+
+.main .container .inner-top {
+    width: 288px;
+    height: 288px;
+}
+
+.main .container .inner-top img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.main .container .inner-bottom {
+    width: 288px;
+    height: 129px;
+    margin: 24px 0px 0px 0px;
+    padding: 0px 16px;
+}
+
+.main .container .inner-bottom h1 {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: 0.19px;
+    vertical-align: top;
+    color: var(--header-color);
+    text-align: center;
+}
+
+.main .container .inner-bottom p {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+    letter-spacing: 0.19px;
+    vertical-align: top;
+    color: var(--paragraph-color);
+    text-align: center;
+    margin-top: 16px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .main .container {
+        max-width: 320px;
+        max-height: 497px;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .main .container {
+        max-width: 320px;
+        max-height: 497px;
+    }
+}
